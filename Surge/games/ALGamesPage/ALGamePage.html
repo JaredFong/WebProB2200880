@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Legends</title>
+    <link rel="stylesheet" href="ALGamePagestyles.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>Apex Legends</h1>
+                <div class="rating">
+                    <span>🛡️ Competitive-Community</span>
+                    <span>🖱️ Quickly Understand the Controls</span>
+                </div>
+            </div>
+            <button class="return-menu-button" onclick="window.location.href='../../index.php';">RETURN TO MENU</button>
+        </header>
+        <main>
+            <div class="game-section">
+                <div class="game-images">
+                    <div class="slider">
+                        <img src="ALPic2.jpg" alt="Game Image 1" class="main-slide">
+                        <img src="ALPic1.jpg" alt="Game Image 2" class="main-slide">
+                        <img src="ALPic3.jpg" alt="Game Image 3" class="main-slide">
+                        <img src="ALpic4.jpg" alt="Game Image 4" class="main-slide">
+                        <img src="ALpic5.jpg" alt="Game Image 5" class="main-slide">
+                    </div>
+                    <div class="thumbnails-wrapper">
+                        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                        <div class="thumbnails">
+                            <img src="ALPic2.jpg" alt="Game Image 1" onclick="currentSlide(1)">
+                            <img src="ALPic1.jpg" alt="Game Image 2" onclick="currentSlide(2)">
+                            <img src="ALPic3.jpg" alt="Game Image 3" onclick="currentSlide(3)">
+                            <img src="ALpic4.jpg" alt="Game Image 4" onclick="currentSlide(4)">
+                            <img src="ALpic5.jpg" alt="Game Image 5" onclick="currentSlide(5)">
+                        </div>
+                        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                    </div>
+                </div>
+                <p class="intro">For over half a decade, "Apex Legends" has delivered a pinnacle of battle royale competition, shaped by a vast community spanning the globe. Now, the saga continues with the next evolution of the Apex Games. This is "Apex Legends 2."
+                </p>
+                <div class="game-description">
+                    <div class="genres-features">
+                        <div class="genres">
+                            <h3>Genres</h3>
+                            <a href="#">Shooter</a>,
+                            <a href="#">Action</a>
+                        </div>
+                        <div class="features">
+                            <h3>Features</h3>
+                            <a href="#">Co-op</a>,
+                            <a href="#">Multiplayer</a>,
+                            <a href="#">Competitive</a>
+                        </div>
+                    </div>
+                    <h2 class="fight-around-the-world space-below">DIVE RIGHT INTO THE WARZONE</h2>
+                    <p class="grey-text space-below">"Apex Legends" is a free-to-play battle royale game where legendary competitors from around the Frontier team up to battle for glory, fame, and fortune. Set in the Titanfall universe, players choose from a diverse cast of unique characters, each with their own abilities, to outwit and outfight opponents in fast-paced, squad-based combat.</p>
+                    <h2 class="creativity-greatest-weapon space-below">WINNER WINNER CHICKEN DINNER</h2>
+                    <p class="grey-text space-below">In a match of "Apex Legends," squads of three players drop onto an expansive map to scavenge for weapons, armor, and resources. The goal is to be the last team standing while a ring continuously shrinks, forcing players into increasingly intense encounters. Each player selects a unique Legend with special abilities, adding strategic depth to the fast-paced, tactical combat. The match ends when only one squad remains.</p>
+                    <!-- System Requirements Section -->
+                    <div class="system-requirements">
+                        <h2>System Requirements</h2>
+                        <div class="requirements-grid">
+                            <div class="requirements-column">
+                                <h3>Minimum</h3>
+                                <p>OS: <span class="requirement-detail">64-bit Windows 10 and higher</span></p>
+                                <p>Processor: <span class="requirement-detail">Intel Core i3-6300 3.8GHz / AMD FX-4350 4.2 GHz Quad-Core Processor</span></p>
+                                <p>Memory: <span class="requirement-detail">RAM 6GB</span></p>
+                                <p>Graphics: <span class="requirement-detail">NVIDIA GeForce GT 640 / Radeon HD 7730</span></p>
+                            </div>
+                            <div class="requirements-column">
+                                <h3>Recommended</h3>
+                                <p>OS: <span class="requirement-detail">64-bit Windows 10 and higher</span></p>
+                                <p>Processor: <span class="requirement-detail">Intel i5 3570K or equivalent</span></p>
+                                <p>Memory: <span class="requirement-detail">RAM 8GB</span></p>
+                                <p>Graphics: <span class="requirement-detail">Nvidia GeForce GTX 970 / AMD Radeon R9 290</span></p>
+                            </div>
+                        </div>
+                        <div class="languages-supported">
+                            <p>Languages Supported:</p>
+                            <p>Audio: <span class="requirement-detail">English, Chinese (traditional), Chinese (simplified), French, German, Italian, Japanese, Korean, Polish, Portuguese, Russian and Spanish.</span></p>
+                            <p>Text: <span class="requirement-detail">English, Chinese (traditional), Chinese (simplified), French, German, Italian, Japanese, Korean, Polish, Portuguese, Russian and Spanish.</span></p>
+                        </div>
+                    </div>
+                    <!-- End of System Requirements Section -->
+                </div>
+            </div>
+            <aside>
+                <img src="gamelogoAL.png" alt="Mini Image">
+                <div class="game-info">
+                    <p class="base-game">Base Game</p>
+                    <p class="price">Free</p>
+                    <button class="get-button" onclick="window.location.href='https://store.steampowered.com/app/1172470/Apex_Legends/';">GET</button>
+                    <p class="developer-info">Developer: <span>Electronic Arts</span></p>
+                    <p class="publisher-info">Publisher: <span>Electronic Arts</span></p>
+                    <p class="release-date-info">Release Date: <span>4 / 02 / 2019</span></p>
+                    <p class="initial-release-info">Initial Release: <span>4 / 02 / 2019</span></p>
+                    <p class="platform-info">Platform: <span>Windows, Console</span></p>
+                    <button class="news-button" onclick="window.location.href='../../news_update.php?games_id=3';">NEWS & UPDATES</button>
+                    <button class="reviews-button" onclick="window.location.href='../../review.php?games_id=3';">REVIEWS</button>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="ALGameJS.js"></script>
+</body>
+</html>

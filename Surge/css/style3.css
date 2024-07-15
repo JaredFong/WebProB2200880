@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: url('../img/new.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(15, 0, 55); /* You can change the color */
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none; /* Ignore pointer events to avoid blocking clicks */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease; /* Smooth movement */
+    z-index: 1000; /* Ensure the ball is on top of all other elements */
+  }
+  
+  .cursor.pulse {
+    animation: pulse 0.5s infinite; /* Apply the pulse animation */
+  }
+  
+  @keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+a{
+    cursor: none;
+}
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: rgba(112, 112, 112, 0.541);   
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 5px;
+    cursor: none;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 1;
+    color: #0ebbff; /* Ensure text color is white */
+}
+
+.home-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #000000; /* Change text color on hover */
+}
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .forms {
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+.container .form {
+    width: 50%;
+    padding: 30px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .login {
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup {
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+
+.container.active .signup {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.container.active .forms {
+    height: 650px;
+}
+
+.container .form .title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #1c64e9c4;
+    border-radius: 25px;
+}
+
+.form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #adadad;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+    color: #ffffff; /* Ensure input text color is white */
+}
+
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: #4070f4;
+}
+
+.input-field input::placeholder {
+    color: #ffffff; /* Set placeholder text color to white */
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+    color: #092779;
+}
+
+.input-field i.icon {
+    left: 0;
+}
+
+.input-field i.showHidePw {
+    right: 0;
+    cursor: none;
+    padding: 10px;
+}
+
+.form .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #ffffff; /* Ensure checkbox text color is white */
+}
+
+.checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    margin-right: 10px;
+    accent-color: #4070f4;
+}
+
+.form .text {
+    color: #ffffff; /* Ensure general text color is white */
+    font-size: 14px;
+}
+
+.form a.text {
+    color: #28d1fc;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form .button {
+    margin-top: 35px;
+}
+
+.form .button input {
+    border: none;
+    color: #ffffff; /* Ensure button text color is white */
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #5f5f5f;
+    cursor: none;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #ffffff;
+    color: #000000; /* Change button text color on hover */
+}
+
+.form .login-signup {
+    margin-top: 30px;
+    text-align: center;
+    color: #ffffff; /* Ensure login-signup text color is white */
+}

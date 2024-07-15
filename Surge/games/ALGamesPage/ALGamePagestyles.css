@@ -1,0 +1,315 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    cursor: none; /* Hide the default cursor */
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(15, 0, 55); /* You can change the color */
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none; /* Ignore pointer events to avoid blocking clicks */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease; /* Smooth movement */
+    z-index: 1000; /* Ensure the cursor is on top of all other elements */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.return-menu-button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    margin: 14px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: auto;
+}
+
+.return-menu-button:hover {
+    background-color: #797c6b86;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-section {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.game-images {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+}
+
+.main-slide {
+    width: 100%;
+    display: none;
+}
+
+.main-slide:first-child {
+    display: block;
+}
+
+.thumbnails-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(31, 106, 175, 0.925); /* Semi-transparent blue */
+    border: none;
+}
+
+aside {
+    flex: 1;
+    text-align: center;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.game-info {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.game-info p {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.developer-info, .publisher-info, .release-date-info, .initial-release-info, .platform-info {
+    color: #cccccc;
+    font-size: 0.8em;
+    border-bottom: 1px solid #ffffff;
+}
+
+.base-game {
+    text-align: left;
+}
+
+.price {
+    text-align: center;
+    display: inline-block;
+    border: 1.8px solid #00ff0dc0;
+    border-radius: 6px;
+    padding: 5px 3px;
+    font-size: 1.4em;
+    color: #00ff0dc0;
+    width: 52px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.get-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 15px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 17px;
+    width: calc(100% - 1%);
+    text-align: center;
+}
+
+.get-button:hover {
+    background-color: #0056b3;
+}
+
+.news-button {
+    background-color: #ffa60086;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    margin: 14px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(100% - 1%);
+}
+
+.news-button:hover {
+    background-color: #0056b3;
+}
+
+.reviews-button {
+    background-color: #ff5202be;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 13px 20px;
+    margin: 3px 1;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(100% - 1%);
+}
+
+.reviews-button:hover {
+    background-color: #0056b3;
+}
+
+.game-description {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.genres-features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.genres, .features {
+    flex: 1;
+}
+
+.genres h3, .features h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.genres a, .features a {
+    color: #00ff0d;
+    text-decoration: none;
+}
+
+.genres a:hover, .features a:hover {
+    text-decoration: underline;
+}
+
+p.intro {
+    margin-top: 35px; /* Add space above this paragraph */
+}
+
+h2 {
+    margin-top: 49px; /* Add space above each heading */
+}
+
+.space-below {
+    margin-bottom: 40px; /* Add space below these sections */
+}
+
+h2.fight-around-the-world {
+    color: #f17b6b; /* Custom color for FIGHT AROUND THE WORLD */
+}
+
+h2.creativity-greatest-weapon {
+    color: #f17b6b; /* Custom color for CREATIVITY IS YOUR GREATEST WEAPON */
+}
+
+p.grey-text {
+    color: #cfcfcf; /* Slightly grey color for descriptive text */
+}
+
+/* System Requirements Section */
+.system-requirements {
+    margin-top: 40px;
+}
+
+.requirements-grid {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fcce00;
+    padding: 20px;
+    background-color: #f0a2114f;
+    border-radius: 10px;
+}
+
+.requirements-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.requirements-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #73ff00;
+}
+
+.requirements-column p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.requirement-detail {
+    color: #ffffff; /* Add the desired color */
+}
+
+.languages-supported {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.languages-supported p {
+    margin-bottom: 10px;
+    color: #f17b7b; /* Add the desired color */
+}

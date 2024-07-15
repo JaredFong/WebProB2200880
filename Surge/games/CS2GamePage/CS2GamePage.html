@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Strike 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>COUNTER STRIKE 2</h1>
+                <div class="rating">
+                    <span>🟢 TEAM-BASED</span>
+                    <span>⚔️ Challenging Combat</span>
+                </div>
+            </div>
+            <button class="return-menu-button" onclick="window.location.href='../../index.php';">RETURN TO MENU</button>
+        </header>
+        <main>
+            <div class="game-section">
+                <div class="game-images">
+                    <div class="slider">
+                        <img src="cs2Pic.jpg" alt="Game Image 1" class="main-slide">
+                        <img src="cs2Pic2.jpg" alt="Game Image 2" class="main-slide">
+                        <img src="cs2Pic3.jpg" alt="Game Image 3" class="main-slide">
+                        <img src="cs2pic4.jpg" alt="Game Image 4" class="main-slide">
+                        <img src="cs2pic5.jpg" alt="Game Image 5" class="main-slide">
+                    </div>
+                    <div class="thumbnails-wrapper">
+                        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                        <div class="thumbnails">
+                            <img src="cs2Pic.jpg" alt="Game Image 1" onclick="currentSlide(1)">
+                            <img src="cs2Pic2.jpg" alt="Game Image 2" onclick="currentSlide(2)">
+                            <img src="cs2Pic3.jpg" alt="Game Image 3" onclick="currentSlide(3)">
+                            <img src="cs2pic4.jpg" alt="Game Image 4" onclick="currentSlide(4)">
+                            <img src="cs2pic5.jpg" alt="Game Image 5" onclick="currentSlide(5)">
+                        </div>
+                        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                    </div>
+                </div>
+                <p class="intro">For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now, the next chapter in the CS story is about to begin. This is Counter-Strike 2.</p>
+                <div class="game-description">
+                    <div class="genres-features">
+                        <div class="genres">
+                            <h3>Genres</h3>
+                            <a href="#">Action</a>,
+                            <a href="#">Shooter</a>
+                        </div>
+                        <div class="features">
+                            <h3>Features</h3>
+                            <a href="#">Competitive</a>,
+                            <a href="#">Multiplayer</a>
+                        </div>
+                    </div>
+                    <h2 class="fight-around-the-world space-below">FIGHT AROUND THE WORLD</h2>
+                    <p class="grey-text space-below">Blend your style and experience on a global, competitive stage. Attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll have to think faster than your opponent if you want to survive.</p>
+                    <h2 class="creativity-greatest-weapon space-below">CREATIVITY IS YOUR GREATEST WEAPON</h2>
+                    <p class="grey-text space-below">In a round of "Counter-Strike 2" (CS2), Terrorists (Ts) aim to plant a bomb, while Counter-Terrorists (CTs) try to stop them. Players buy weapons and equipment at the start, and the round ends when the bomb is planted and explodes, defused, or one team is eliminated. Each round lasts under two minutes.</p>
+                    <!-- System Requirements Section -->
+                    <div class="system-requirements">
+                        <h2>System Requirements</h2>
+                        <div class="requirements-grid">
+                            <div class="requirements-column">
+                                <h3>Minimum</h3>
+                                <p>OS: <span class="requirement-detail">Windows 10 (64-bit, Version 1996 / Build 19041 or higher)</span></p>
+                                <p>Processor: <span class="requirement-detail">4 Hardware CPU Threads - Intel i5-750 or higher</span></p>
+                                <p>Memory: <span class="requirement-detail">RAM 8GB</span></p>
+                                <p>Graphics: <span class="requirement-detail">1GB Video Card & Direct X Compatible</span></p>
+                            </div>
+                            <div class="requirements-column">
+                                <h3>Recommended</h3>
+                                <p>OS: <span class="requirement-detail">Windows 10/11 (64-bit)</span></p>
+                                <p>Processor: <span class="requirement-detail">Intel i7-9700K (Intel), Ryzen 3 3600 (AMD)</span></p>
+                                <p>Memory: <span class="requirement-detail">RAM 16GB</span></p>
+                                <p>Graphics: <span class="requirement-detail">NVIDIA GeForce RTX 2070</span></p>
+                            </div>
+                        </div>
+                        <div class="languages-supported">
+                            <p>Languages Supported:</p>
+                            <p>Audio: <span class="requirement-detail">Portuguese - Brazil, Polish, Arabic, French, German, Italian, Spanish - Spain, Japanese, Russian, Thai, Chinese - Traditional, Vietnamese, Turkish, Korean</span></p>
+                            <p>Text: <span class="requirement-detail">Portuguese - Brazil, Polish, Arabic, French, German, Italian, Spanish - Spain, Japanese, Russian, Thai, Chinese - Traditional, Turkish, Vietnamese, Korean</span></p>
+                        </div>
+                    </div>
+                    <!-- End of System Requirements Section -->
+                </div>
+            </div>
+            <aside>
+                <img src="Counter-Strike_2_gamelogo_lightmode.png" alt="Mini Image">
+                <div class="game-info">
+                    <p class="base-game">Base Game</p>
+                    <p class="price">Free</p>
+                    <button class="get-button" onclick="window.location.href='https://store.steampowered.com/app/730/CounterStrike_2/';">GET</button>
+                    <p class="developer-info">Developer: <span>VALVE</span></p>
+                    <p class="publisher-info">Publisher: <span>VALVE</span></p>
+                    <p class="release-date-info">Release Date: <span>29 / 09 / 2023</span></p>
+                    <p class="initial-release-info">Initial Release: <span>22 / 03 / 2023</span></p>
+                    <p class="platform-info">Platform: <span><img src="windows_logo.png" alt="Windows"></span></p>
+                    <button class="news-button" onclick="window.location.href='../../news_update.php?games_id=1';">NEWS & UPDATES</button>
+                    <button class="reviews-button" onclick="window.location.href='../../review.php?games_id=1';">REVIEWS</button>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="CS2GameJS.js"></script>
+</body>
+</html>

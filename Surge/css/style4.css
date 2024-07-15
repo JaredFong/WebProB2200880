@@ -1,0 +1,269 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url('../img/siege.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(15, 0, 55); /* You can change the color */
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none; /* Ignore pointer events to avoid blocking clicks */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease; /* Smooth movement */
+    z-index: 1000; /* Ensure the ball is on top of all other elements */
+}
+
+header .banner {
+    position: relative;
+    background-color: rgba(51, 51, 51, 0.8);
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .banner .logo-icon {
+    max-width: 50px;
+    margin-left: 150px;
+}
+
+header .banner .site-title {
+    font-size: 4em; 
+    color: transparent; 
+    background: url('../img/desk.jpg') no-repeat center center; 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    margin: 0;
+    flex: 1;
+}
+
+header .banner .home-button {
+    background: linear-gradient(to right, rgba(66, 178, 219, 0.6), rgba(102, 102, 102, 0.6));
+    color: #fff;
+    border: none;
+    padding: 12px 24px; 
+    font-size: 1.1em; 
+    font-weight: bold; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+header .banner .home-button:hover {
+    background: linear-gradient(to right, rgba(51, 51, 51, 0.8), rgba(102, 102, 102, 0.8));
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;  
+    background: rgba(146, 213, 238, 0.268);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 179, 255, 0.5);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background: rgba(242, 253, 255, 0.473);
+    backdrop-filter: blur(10px);
+    color: #333;
+}
+
+.search button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgba(66, 178, 219, 0.6), rgb(0, 67, 143)); 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.search button:hover {
+    background: linear-gradient(to right, rgba(66, 178, 219, 0.6), rgba(0, 67, 143)); 
+}
+
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rules, .forum-info {
+    width: 48%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 1%;
+}
+
+.rules h2, .forum-info h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.rules ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rules ul li {
+    background-color: rgba(224, 224, 224, 0.8);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold; 
+}
+
+.forum-info {
+    position: relative;
+}
+
+.forum-description {
+    background: linear-gradient(to right, #333, #01abc9); 
+    padding: 20px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #dbfffc;
+    font-weight: bold; 
+    text-align: justify;
+}
+
+.threads h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.thread-list .thread {
+    display: flex;
+    align-items: center;
+    background-color: rgba(249, 249, 249, 0.8);
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid rgba(221, 221, 221, 0.5);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.thread-list .thread .thread-profile-pic {
+    width: 50px;
+    height: 50px; 
+    margin-right: 15px;
+    object-fit: cover; 
+}
+
+.thread-list .thread .thread-content {
+    flex: 1;
+}
+
+.thread-list .thread h3 {
+    margin: 0;
+    color: #0073e6;
+}
+
+.thread-list .thread p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    background-color: #2483a2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #3d5d7c;
+}
+
+.pagination .prev, .pagination .next {
+    background-color: #11639d; 
+}
+
+.pagination .prev:hover, .pagination .next:hover {
+    background-color: #3d5d7c; 
+}
+
+.new-topic {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, rgba(66, 178, 219, 0.6), rgb(0, 67, 143));
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.new-topic:hover {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(53, 188, 241, 0.705));
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search input {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .info-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rules, .forum-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

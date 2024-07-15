@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Strike 2 News</title>
+    <link rel="stylesheet" href="CS2styles.css">
+</head>
+<body>
+    <header></header>
+    <div class="tab-menu">
+        <button class="tab-button return-button">Return to CS2</button>
+        <div class="tab-buttons-container">
+            <button class="tab-button active" onclick="openTab(event, 'news')">News</button>
+        </div>
+    </div>
+    <main>
+        <div id="news" class="tab-content active">
+            <article class="news-item">
+                <img src="CSnews1.png" alt="Fire Sale" class="news-image">
+                <div class="news-content">
+                    <h2>Fire Sale</h2>
+                    <p>24 May 2024</p>
+                    <p>Today's update includes some love for the CT economy, with price cuts to the M4A4 and Incendiary grenade, and a bit less cash going to the T's when the bomb gets defused.</p>
+                    <a href="#">Read More →</a>
+                </div>
+            </article>
+            <article class="news-item">
+                <img src="CSnews2.png" alt="On The Other Hand" class="news-image">
+                <div class="news-content">
+                    <h2>On The Other Hand...</h2>
+                    <p>26 April 2024</p>
+                    <p>Today's update includes a bunch of quality-of-life improvements that touch upon every part of the game, from maps to UI to gameplay.</p>
+                    <a href="#">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <script src="CS2Updatescripts.js"></script>
+</body>
+</html>
